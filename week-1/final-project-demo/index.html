@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Achievements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="achievement-module.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <!-- <h2 id="logo">Logo</h2> -->
+    <nav aria-label="main-navigation">
+        <ul class="sets">
+            <li class="set" id="addSet">+</li>
+            <li class="set" id="subSet">-</li>
+            <li class="set" id="mltSet">x</li>
+            <li class="set" id="divSet">÷</li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1>Arithmetic Achievements</h1>
+    <p>Welcome to Mathchievement.</p>
+    <h2><span id="equation">Ready?</span></h2>
+    <button id="startBtn">Start</button>
+    <div id="result"><h2>=</h2></div>
+    <form method="post" type="submit" id="qForm">
+        <label>
+            Equals:
+            <input type="number" step="any" id="userInput">
+        </label>
+        <button id="doneBtn">Done</button>
+    </form>
+</body>
+</html>

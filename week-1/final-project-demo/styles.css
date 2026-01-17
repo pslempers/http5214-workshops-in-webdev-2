@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ==== TABLE OF CONTENTS ==== */
+/* 1. GENERAL STYLES */
+/* --a. LISTS */
+/* 2. HEADER */
+/* 3. BODY */
+/* 4. FOOTER */
+
+
+/* 1. GENERAL STYLES */
+h1 {
+    text-align: center;
+}
+
+/* --a. LISTS */
+ul {
+    list-style-type: none;
+}
+.sets {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.sets > li {
+    font-size:x-large;
+    background-color: #333;
+    padding:0.5em 1em;
+    border-radius: 5px;
+}
+
+.sets > li:hover{
+    font-size:x-large;
+    background-color: #222;
+    padding:0.5em 1em;
+    border-radius: 5px;
+}
+
+.selected {
+    border:1px solid green;
+}
+
+/* 2. HEADER */
+#logo {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* 3. BODY */
+body {
+    color:white;
+    background-color: #111;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#equation {
+    color: green;
+}
+
+#result {
+    text-align: center;
+}
+
+#startBtn {
+    text-align: center;
+}
+
+#qForm {
+    position: relative;
+}
