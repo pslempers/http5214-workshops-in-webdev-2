@@ -65,7 +65,22 @@ body {
 #startBtn {
     text-align: center;
 }
-
+#achievementDiv {
+    background-color:green;
+    color:white;
+    border:solid 2px black;
+    width:200px;
+    padding:5px;
+    border-radius:5px;
+}
 #qForm {
     position: relative;
+}
+.log__active {
+    
+}
+
+/* 4. BUTTON */
+#aceButton {
+    margin: 3em;
 }

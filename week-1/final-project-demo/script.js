@@ -1,3 +1,4 @@
+import {achievementUnlocked} from "./achievement-module.js";
 // SCRIPT FOR MY FINAL PROJECT DEMO
 // This is the main script.
 
@@ -14,6 +15,7 @@
 // In the module, create an achievement class.
 // Every achievement should be built off this class.
 // Achievements will be built as objects with certain parameters.
+
 
 // On Window Load, do the following...
 //Listen for window load the jQuery way
@@ -144,10 +146,13 @@ $(document).ready(function () {
         answer = num1 / num2;
 
         //Clean up the answer to significant digits
-        if (answer - answer.toFixed(2) > 0) {
-            console.log(answer - answer.toFixed(2));
+        if (answer.toFixed(10) - answer.toFixed(2) > 0) {
+            console.log(answer.toFixed(6) - answer.toFixed(2));
             console.log(answer);
             answer = answer.toFixed(2);
+        }
+        if (answer === Infinity) {
+            setSelect();
         }
 
         console.log(answer);
@@ -169,6 +174,12 @@ $(document).ready(function () {
         } else {
             console.log("False.");
         }
+    })
+
+
+    //Add the effect of the Achievement button:
+    $('#aceButton').on('click', () => {
+        achievementUnlocked();
     })
 
 });
